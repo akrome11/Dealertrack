@@ -1,0 +1,30 @@
+.contact-header
+{
+	height: 27px;
+	width: 210px !important;
+	padding: 3px 0px 0px 10px;
+	font-size: 16px !important;
+	color: #132530 !important;
+	font-weight: 300 !important;
+	background-color: #d0d2d3 !important;
+	position: absolute;
+}
+
+.contact-content
+{
+	width: 200px;
+	margin: 10px auto 15px auto;
+	padding-top: 10px;
+}
+
+.contact-container
+{
+	position: relative;
+	right: 0;
+	float: left;
+	height: auto;
+	width: 220px;
+	padding: 0px 0px 15px 0px;
+	background-color: #f2f2f1;
+	font-family: 'OpenSans', Arial, sans-serif;
+}

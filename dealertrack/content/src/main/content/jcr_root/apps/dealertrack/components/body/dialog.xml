@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel"
+    activeTab="{Long}0"
+    height="600"
+    helpPath="en/cq/current/wcm/default_components.html#Text Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <heading
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The heading of the Body"
+                    fieldLabel="Heading"
+                    name="./heading"
+                    xtype="textfield"/>
+                <headingClass
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="What size do you want the heading to be?"
+                    fieldLabel="Heading Class"
+                    name="./headingClass"
+                    type="combobox"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <h1
+                            jcr:primaryType="nt:unstructured"
+                            text="h1"
+                            value="h1"/>
+                        <h2
+                            jcr:primaryType="nt:unstructured"
+                            text="h2"
+                            value="h2"/>
+                        <h3
+                            jcr:primaryType="nt:unstructured"
+                            text="h3"
+                            value="h3"/>
+                    </options>
+                </headingClass>
+                <text
+                    jcr:primaryType="cq:Widget"
+                    editElementQuery="div[class=&quot;text&quot;]"
+                    fieldDescription="The content of the Body"
+                    fieldLabel="Content: "
+                    name="./text"
+                    xtype="richtext"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

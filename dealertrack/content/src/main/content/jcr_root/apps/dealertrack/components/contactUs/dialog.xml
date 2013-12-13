@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Navbar"
+    width="800"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Tab 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <props
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Link titles and their link"
+                        fieldLabel="Contact"
+                        name="./contact"
+                        xtype="multicompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <title
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldDescription="The name that appears on the navbar"
+                                fieldLabel="Link Title"
+                                name="./title"
+                                xtype="textfield"/>
+                            <phone
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="The phone number to contact (ex. 999.999.9999)"
+                                fieldLabel="Phone"
+                                name="./phone"
+                                xtype="textfield"/>
+                            <hours
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Click the '+' to add a new page"
+                                fieldLabel="Hours"
+                                name="./hours"
+                                xtype="multifield">
+                                <fieldConfig
+                                    jcr:primaryType="cq:Widget"
+                                    width="155"
+                                    xtype="textfield"/>
+                            </hours>
+                        </fieldConfigs>
+                    </props>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>
