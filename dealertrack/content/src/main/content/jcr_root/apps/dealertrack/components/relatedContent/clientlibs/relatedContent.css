@@ -1,0 +1,9 @@
+.relatedList
+{
+	list-style-type: none;
+}
+
+.relatedListItem
+{
+	display: inline;
+}

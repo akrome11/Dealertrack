@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="IFrame"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Tab 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <parentPath
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldLabel="Enter the page you want to display:"
+                        name="./path"
+                        xtype="pathfield"/>
+                    <align
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="How do you want the iframe aligned?"
+                        fieldLabel="Align"
+                        name="./align"
+                        type="combobox"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <left
+                                jcr:primaryType="nt:unstructured"
+                                text="left"
+                                value="left"/>
+                            <right
+                                jcr:primaryType="nt:unstructured"
+                                text="right"
+                                value="right"/>
+                            <top
+                                jcr:primaryType="nt:unstructured"
+                                text="top"
+                                value="top"/>
+                            <middle
+                                jcr:primaryType="nt:unstructured"
+                                text="middle"
+                                value="middle"/>
+                            <bottom
+                                jcr:primaryType="nt:unstructured"
+                                text="bottom"
+                                value="bottom"/>
+                        </options>
+                    </align>
+                    <frameBorder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Do you want a border aroung the iframe?"
+                        fieldLabel="Frame Border"
+                        name="./frameBorder"
+                        type="combobox"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="1"
+                                value="1"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="0"
+                                value="0"/>
+                        </options>
+                    </frameBorder>
+                    <height
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Height(pixels) of the IFrame"
+                        fieldLabel="Height"
+                        name="./height"
+                        xtype="textfield"/>
+                    <width
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Width(pixels) of the IFrame"
+                        fieldLabel="Width"
+                        name="./width"
+                        xtype="textfield"/>
+                    <marginHeight
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Margin Height(pixels) of the IFrame"
+                        fieldLabel="Margin Height"
+                        name="./marginHeight"
+                        xtype="textfield"/>
+                    <marginWidth
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="margin Width(pixels) of the IFrame"
+                        fieldLabel="Margin Width"
+                        name="./marginWidth"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Name of the IFrame"
+                        fieldLabel="Name"
+                        name="./name"
+                        xtype="textfield"/>
+                    <scrolling
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Do you want scrolling?"
+                        fieldLabel="Scrolling"
+                        name="./scrolling"
+                        type="combobox"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="yes"
+                                value="yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="no"
+                                value="no"/>
+                            <auto
+                                jcr:primaryType="nt:unstructured"
+                                text="auto"
+                                value="auto"/>
+                        </options>
+                    </scrolling>
+                    <seamless
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Do you want it to be Seamless?"
+                        fieldLabel="Seamless"
+                        name="./seamless"
+                        type="combobox"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="yes"
+                                value="yes"/>
+                            <no
+                                jcr:primaryType="nt:unstructured"
+                                text="no"
+                                value="no"/>
+                        </options>
+                    </seamless>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,31 @@
+.title
+{
+	color: #AF292E;
+}
+
+.highlight1
+{
+	width:28%;
+	display: inline-block;
+	margin-right: -3%;
+	padding-left: 2%;
+	padding-right:3%;
+}
+
+.highlight2
+{
+	width:28%;
+	display: inline-block;
+	border-left: thin solid black;
+	margin-right: -3%;
+	padding-left: 6%;
+	padding-right: 3%;
+}
+
+.highlight3
+{
+	width:28%;
+	display: inline-block;
+	border-left: thin solid black;
+	padding-left: 6%;
+}

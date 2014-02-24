@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:TabPanel"
+    activeTab="{Long}0"
+    height="1000"
+    helpPath="en/cq/current/wcm/default_components.html#Text Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <product1title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title of the first product"
+                    fieldLabel="Product 1 Title"
+                    name="./product1title"
+                    xtype="textfield"/>
+                <product1text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The content of the first product"
+                    fieldLabel="Product 1 Text"
+                    name="./product1text"
+                    xtype="richtext"/>
+                <product2title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title of the second product"
+                    fieldLabel="Product 2 Title"
+                    name="./product2title"
+                    xtype="textfield"/>
+                <product2text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The content of the second product"
+                    fieldLabel="Product 2 Text"
+                    name="./product2text"
+                    xtype="richtext"/>
+                <product3title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title of the third product"
+                    fieldLabel="Product 3 Title"
+                    name="./product3title"
+                    xtype="textfield"/>
+                <product3text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The content of the third product"
+                    fieldLabel="Product 3 Text"
+                    name="./product3text"
+                    xtype="richtext"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

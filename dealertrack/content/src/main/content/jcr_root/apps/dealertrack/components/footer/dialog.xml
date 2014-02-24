@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Navbar"
+    width="600"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Tab 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <props
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Input Link titles and their link"
+                        fieldLabel="Links"
+                        name="./link"
+                        xtype="multicompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <title
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldDescription="The name that appears on the navbar"
+                                fieldLabel="Link Title"
+                                name="./title"
+                                xtype="textfield"/>
+                            <link
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldDescription="The path or link to a webpage"
+                                fieldLabel="Link"
+                                name="./link"
+                                xtype="pathfield"/>
+                        </fieldConfigs>
+                    </props>
+                    <richText
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="The rich text area below the footer"
+                        fieldLabel="Rich Text Area"
+                        name="./richText"
+                        validateOnBlur="true"
+                        xtype="richtext"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

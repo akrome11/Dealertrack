@@ -1,0 +1,208 @@
+.cq-colctrl-lt0-c0
+{
+	width: 70% !important;
+	float: left;
+    margin-top: 25px;
+}
+
+.cq-colctrl-lt0-c1
+{
+	width: 30% !important;
+	float: right;
+    margin-top: 25px;
+}
+
+.cq-colctrl-lt1-c0
+{
+	width: 30% !important;
+	float: left;
+    margin-top: 25px;
+}
+
+.cq-colctrl-lt1-c1
+{
+	width: 70% !important;
+	float: right;
+    margin-top: 25px;
+}
+
+.cq-colctrl-lt2-c0
+{
+	width: 50% !important;
+	float: left;
+    margin-top: 25px;
+}
+
+.cq-colctrl-lt2-c1
+{
+	width: 50% !important;
+	float: right;
+    margin-top: 25px;
+}
+
+/* 2. Framework */
+/***** Floats ******/
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.clear { clear: both; }
+
+/***** Margins ******/
+.marginTop-5 { margin-top: 5px; }
+.marginTop-10 { margin-top: 10px; }
+.marginTop-15 { margin-top: 15px; }
+.marginTop-20 { margin-top: 20px; }
+.marginTop-25 { margin-top: 25px; }
+
+.marginRight-5 { margin-right: 5px; }
+.marginRight-10 { margin-right: 10px; }
+.marginRight-15 { margin-right: 15px; }
+.marginRight-20 { margin-right: 20px; }
+.marginRight-25 { margin-right: 25px; }
+.marginRight-35 { margin-right: 35px; }
+
+.marginBottom-5 { margin-bottom: 5px; }
+.marginBottom-10 { margin-bottom: 10px; }
+.marginBottom-15 { margin-bottom: 15px; }
+.marginBottom-20 { margin-bottom: 20px; }
+.marginBottom-25 { margin-bottom: 25px; }
+
+.marginLeft-10 { margin-left: 10px; }
+.marginLeft-25 { margin-left: 25px; }
+.marginLeft-35 { margin-left: 35px; }
+.marginLeft-40 { margin-left: 40px; }
+.marginLeft-100 { margin-left: 100px; }
+
+/***** Padding ******/
+.paddingRight-25 { padding-right:25px; }
+.paddingLeft-25 { padding-left:25px; }
+
+/***** Widths ******/
+.container-300 { width:300px; }
+.container-330 { width:330px; }
+.container-590 { width:590px; }
+.container-620 { width:620px; }
+.container-685 { width:685px; }
+.container-50-percent { width:50%; }
+
+/***** Color Box ******/
+.color-box { height:25px; width:25px; }
+
+/***** Line Height ******/
+.line-height-15 { line-height:15px; }
+
+/***** Background Colors ******/
+.orange { background-color: #d87b27; }
+.pine-green { background-color: #40a348; }
+.powder-blue { background-color: #7ca9da; }
+.dark-red { background-color: #a11d21; }
+.lime-green { background-color: #a1ce52; }
+.light-blue { background-color: #99d8e2; }
+.dark-grey { background-color: #d0d2d3; }
+.light-grey { background-color: #f2f2f1; }
+.white { color: #FFFFFF; }
+.black-opacity-80 { background: url("/content/dam/Dealertrack/styles/backgrounds/80opacity-BlackBG.png") repeat scroll 0 0 transparent; }
+.white-opacity-90 { background:url('/content/dam/Dealertrack/styles/backgrounds/90opacity-WhiteBG.png'); }
+
+/*------------------------------------------------------------------------------------------------>*/
+
+/* 3. Global Typography */
+body {
+	position: relative;
+	margin: 0px;
+	color: #595a5c;
+	font: normal 62.5%/1.5 'OpenSans', Arial, sans-serif;
+	font-size: 12px;
+	letter-spacing: 0;
+	-webkit-font-smoothing: subpixel-antialiased;
+	background-color:#f3f3f3;
+	background-repeat: no-repeat;
+	background-position: center top;	
+}
+
+h1, h2, h3, h4, h5, h6, p, div, a, span, ul, ol, li, input, label, strong, bold, i, em, u, dl, select, textarea {
+	font-family: 'OpenSans', Arial, sans-serif;
+}
+h1 { /***/
+	font-size: 16px;
+	color: #595a5c;
+	font-weight: 600;
+}
+h2 { /***/
+    margin: 5px 0px 15px 0px;
+    font-size: 16px;
+    line-height: 19px;
+	color: #595A5C;
+	font-weight:bold;
+}
+h3 { /***/
+	font-size: 18px;
+	color: #666;
+}
+h4 {
+	clear:both;
+	margin: 0px 0px 10px 0px;
+	font-size: 12px;
+	text-align:left;
+	color: #595a5c;
+	font-weight:bold;
+}
+h5 { /***/
+	font-size: 12px;
+	color: #595a5c;
+}
+h6 { /***/
+	font-weight: bold;
+	font-size: 14px;
+	color: #595a5c;
+}
+p {	
+	clear:both;	
+ 	margin:0px 0px 10px 0px;
+	font-size:12px;
+    line-height:16px;  
+}
+
+/***** Links ******/
+a {
+	text-decoration: none;
+	color: #595a5c;
+}
+a:active {
+	text-decoration: none;
+	color: #595a5c;
+}
+a:visited {
+	text-decoration: none;
+	color: #999999;
+}
+
+/***** Page Containers ******/
+div.page-container {
+	display: block;
+	width: 960px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	background-color: #FFF;
+}
+div.page-wrapper {
+	display: inline-block;
+	height: auto;
+	width: 960px;
+	margin: 0px auto;
+	padding: 0px;	
+}
+
+/***** Page Content ******/
+div.page-content {
+	clear:both;
+	position:relative;
+	display: block;
+	width: 960px;
+	margin: 0px auto 25px auto;
+	background-color:#FFF;	
+}
+div.page-content h1 {
+	padding:10px 0px 0px 0px;
+	font-size:30px;
+	text-align:left;
+}

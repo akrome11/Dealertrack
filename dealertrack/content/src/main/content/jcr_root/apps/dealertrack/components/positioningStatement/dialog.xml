@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:TabPanel"
+    activeTab="{Long}0"
+    height="600"
+    helpPath="en/cq/current/wcm/default_components.html#Text Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <heading
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The heading of the Body"
+                    fieldLabel="Heading"
+                    name="./heading"
+                    xtype="textfield"/>
+                <text
+                    jcr:primaryType="cq:Widget"
+                    editElementQuery="div[class=&quot;text&quot;]"
+                    fieldDescription="The content of the Body"
+                    fieldLabel="Content: "
+                    name="./text"
+                    xtype="richtext"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

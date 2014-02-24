@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:TabPanel"
+    activeTab="{Long}0"
+    height="600"
+    helpPath="en/cq/current/wcm/default_components.html#Text Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Title of the News Item"
+                    fieldLabel="Title"
+                    name="./title"
+                    xtype="textfield"/>
+                <subTitle
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Sub Title of the News Item"
+                    fieldLabel="Sub Title"
+                    name="./subTitle"
+                    xtype="textfield"/>
+                <date
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Date of the News Item"
+                    fieldLabel="Date"
+                    name="./date"
+                    xtype="datefield"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

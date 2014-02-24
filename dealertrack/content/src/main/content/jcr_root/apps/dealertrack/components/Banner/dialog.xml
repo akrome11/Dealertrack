@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    helpPath="en/cq/current/wcm/default_components.html#Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <image
+            jcr:primaryType="cq:Widget"
+            cropParameter="./imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./fileName"
+            fileReferenceParameter="./fileReference"
+            mapParameter="./imageMap"
+            name="./image"
+            requestSuffix=".img.png"
+            rotateParameter="./imageRotate"
+            title="Image"
+            xtype="html5smartimage"/>
+        <advanced
+            jcr:primaryType="cq:Widget"
+            title="Advanced"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./jcr:title"
+                    xtype="textfield"/>
+                <alt
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(leave empty to use the title defined above)"
+                    fieldLabel="Alt Text"
+                    name="./alt"
+                    xtype="textfield"/>
+                <linkURL
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Drop files or pages from the Content Finder"
+                    fieldLabel="Link to"
+                    name="./linkURL"
+                    xtype="pathfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    name="./jcr:description"
+                    xtype="textarea"/>
+                <bannerSize
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="What size banner do you want?"
+                    fieldLabel="Banner Size"
+                    name="./bannerSize"
+                    type="combobox"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <large
+                            jcr:primaryType="nt:unstructured"
+                            text="large"
+                            value="large"/>
+                        <small
+                            jcr:primaryType="nt:unstructured"
+                            text="small"
+                            value="small"/>
+                    </options>
+                </bannerSize>
+                <opacity
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="What color opacity do you want?"
+                    fieldLabel="Opacity"
+                    name="./opacity"
+                    type="combobox"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <black
+                            jcr:primaryType="nt:unstructured"
+                            text="black"
+                            value="black"/>
+                        <white
+                            jcr:primaryType="nt:unstructured"
+                            text="white"
+                            value="white"/>
+                    </options>
+                </opacity>
+            </items>
+        </advanced>
+    </items>
+</jcr:root>

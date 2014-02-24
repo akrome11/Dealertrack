@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:TabPanel"
+    activeTab="{Long}0"
+    height="500"
+    helpPath="en/cq/current/wcm/default_components.html#Text Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <image
+            jcr:primaryType="cq:Widget"
+            cropParameter="./imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./fileName"
+            fileReferenceParameter="./fileReference"
+            mapParameter="./imageMap"
+            name="./image"
+            requestSuffix=".img.png"
+            rotateParameter="./imageRotate"
+            title="Image"
+            xtype="html5smartimage"/>
+        <advanced
+            jcr:primaryType="cq:Widget"
+            title="Advanced"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title of the Carousel Item"
+                    fieldLabel="Title"
+                    name="./title"
+                    xtype="textfield"/>
+                <imageTitle
+                    jcr:primaryType="cq:Widget"
+                    feildDescription="Alternate title for the image."
+                    fieldLabel="Image Title"
+                    name="./imageTitle"
+                    xtype="textfield"/>
+                <weight
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Weight of the slide"
+                    fieldLabel="Weight"
+                    name="./weight"
+                    xtype="textfield"/>
+                <link
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter a path or link to a webpage"
+                    fieldLabel="Link"
+                    name="./link"
+                    xtype="pathfield"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+                <text
+                    jcr:primaryType="cq:Widget"
+                    editElementQuery="div[class=&quot;text&quot;]"
+                    fieldDescription="The body of the Carousel Item"
+                    fieldLabel="Content: "
+                    name="./text"
+                    xtype="richtext"/>
+            </items>
+        </advanced>
+    </items>
+</jcr:root>
