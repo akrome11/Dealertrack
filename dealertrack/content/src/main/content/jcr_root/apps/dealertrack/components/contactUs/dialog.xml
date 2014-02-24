@@ -25,7 +25,7 @@
                                 fieldDescription="The name that appears on the navbar"
                                 fieldLabel="Link Title"
                                 name="./title"
-                                xtype="textfield"/>
+                                xtype="richtext"/>
                             <phone
                                 jcr:primaryType="cq:Widget"
                                 fieldDescription="The phone number to contact (ex. 999.999.9999)"

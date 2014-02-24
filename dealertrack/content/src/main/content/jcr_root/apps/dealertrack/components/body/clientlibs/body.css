@@ -1,4 +1,8 @@
-.h1
-{
-	
+/***** Page Copy ******/
+.page-copy { margin-bottom:25px; }
+.page-copy ul, .page-copy ol { margin:20px 0px; }
+.page-copy li {
+	margin: 0px 0px 7px 12px;
+	list-style-type:square;
 }
+.page-copy li strong { color:#96989d; }

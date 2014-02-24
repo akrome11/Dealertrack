@@ -1,20 +1,15 @@
-<%@include file="/libs/foundation/global.jsp"%> 
+<%@include file="../global.jsp"%> 
 <%@page import="java.util.*,com.day.cq.wcm.api.*,org.apache.sling.api.*" %>
 <%@ page import="com.day.cq.commons.Doctype,
     com.day.cq.wcm.api.WCMMode,
     com.day.cq.wcm.api.components.DropTarget,
-    com.day.cq.wcm.foundation.Image" %>
+    com.karbyn.cms.aem.models.items.*,
+    com.day.cq.wcm.foundation.Image " %>
     
     <cq:includeClientLib categories="body" />
-    
-<%
 
-	String heading = properties.get("heading","");
-	String headingClass = properties.get("headingClass","");
-	String text = properties.get("text", "");
-	%>
-	<<%out.write(headingClass);%>> <% out.write(heading); %></<%out.write(headingClass);%>>
-	
-<%	
-	out.write(text);
-%>
+    
+<slice:lookup appName="dealertrack" var="model" type="<%=dealertrack.cms.aem.web.models.TextModel.class%>" />
+<div class="page-copy">${model.text}</div>
+
+ <cq:include path="clientcontext" resourceType="cq/personalization/components/clientcontext"/>
